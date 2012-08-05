@@ -243,6 +243,24 @@ p.footer-tip {
 	margin-top: 15px;
 }
 
+/* Fix temporal de estilo al módulo menu 
+ * Hay que pensar en una mejor distribución 
+ * de los elementos en el header-box
+ *
+ * - Compatible desde IE 8
+ * - Evita el uso de float
+ */
+ul#menu {
+  display: table;
+}
+ul#menu li.node {
+  display: table-cell;
+}
+
+ul#menu li.node ul {
+  z-index: 999;
+}
+
 /* Body */
 #content-box {
 	border: 1px solid #ccc;
